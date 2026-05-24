@@ -97,7 +97,6 @@ List<OrderDTO> orders=(List<OrderDTO>) request.getAttribute("orders");
     <th>Actions</th>
 </tr>
 <%
-if(orders != null && !orders.isEmpty()){
 for(OrderDTO o:orders){
 %>
 <tr>
@@ -119,14 +118,7 @@ for(OrderDTO o:orders){
 </td>
 </tr>
 
-<%} else{%>
-    <tr>
-<td colspan="7">No Orders Found</td>
-</tr>
-
-<%
-}
-%>
+<%} %>
 
 </table>
 </body>
