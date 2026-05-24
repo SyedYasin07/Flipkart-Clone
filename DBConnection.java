@@ -8,11 +8,11 @@ public class DBConnection {
         Connection con = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/flip?useSSL=false&serverTimezone=UTC",
-                "root",
-                "$yasin4758"
-            );
+           con = DriverManager.getConnection(
+    "jdbc:mysql://shuttle.proxy.rlwy.net:39720/flip?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+    "root",
+    "awsYxCKkaHAtWDUAftCnfuxWTpnXFruL"
+);
         } catch (Exception e) {
             e.printStackTrace();
         }
