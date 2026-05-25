@@ -14,7 +14,7 @@ public class DBConnection {
             con = DriverManager.getConnection(
             	    "jdbc:mysql://shuttle.proxy.rlwy.net:39720/flip?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
             	    "root",
-            	    "awsYxCKkaHAtWDUAftCnfuxWTpnXFruL"
+            	    "awsYxCKkaHAtWDuAftCnfuxWTpnXFruL"
             	);
 
             System.out.println("✅ MySQL DB connected successfully");
