@@ -13,7 +13,8 @@ public class OrderDAO {
 	
 		public void buy(OrderDTO orders) {
 			Connection con=DBConnection.getConnection();
-			String sql="insert into flip.orders(user_Id,Address,Product_Id,Payment_Mode,order_status) values (?,?,?,?,?)";
+			String sql =
+"INSERT INTO flip.orders(user_id, address, product_id, payment_mode, order_status) VALUES (?, ?, ?, ?, ?)";
 			try {
 				PreparedStatement ps= con.prepareStatement(sql);
 //				ps.setInt(1, orders.getOrderId());

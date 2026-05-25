@@ -39,12 +39,11 @@ public class CartDAO {
 
 	    List<CartDTO> list = new ArrayList<>();
 
-	    String sql = 
-	        "SELECT p.id, p.name, p.price, p.image,p.category"+
-	        "FROM flip.cart c "+
-	        "JOIN flip.products p ON c.product_id = p.id"+
-	        "WHERE c.user_id = ?"
-	    ;
+	    String sql =
+    "SELECT p.id, p.name, p.price, p.image, p.category " +
+    "FROM flip.cart c " +
+    "JOIN flip.products p ON c.product_id = p.id " +
+    "WHERE c.user_id = ?";
 
 	    try (Connection con = DBConnection.getConnection();
 	         PreparedStatement ps = con.prepareStatement(sql)) {
