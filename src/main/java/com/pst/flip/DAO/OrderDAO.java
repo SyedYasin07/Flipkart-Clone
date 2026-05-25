@@ -92,6 +92,7 @@ public class OrderDAO {
 
 		        try (ResultSet rs = ps.executeQuery()) {
 		            while (rs.next()) {
+						System.out.println("ROW FOUND");
 		                OrderDTO o = new OrderDTO();
 		                o.setOrderId(rs.getInt("order_id"));
 		                o.setProductName(rs.getString("product_name"));
@@ -103,6 +104,7 @@ public class OrderDAO {
 
 
 		                list.add(o);
+						System.out.println(list.size());
 		            }
 		        }
 
