@@ -1,12 +1,13 @@
 package com.pst.flip.DAO;
 
-import com.pst.flip.DTO.CartDTO;
-import com.pst.util.DB.DBConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.pst.flip.DTO.CartDTO;
+import com.pst.util.DB.DBConnection;
 
 public class CartDAO {
 	public void addToCart(CartDTO cart) {
