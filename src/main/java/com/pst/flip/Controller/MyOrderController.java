@@ -21,7 +21,7 @@ public class MyOrderController extends HttpServlet {
                          HttpServletResponse response)
             throws ServletException, IOException {
 
-        int userId = 1;
+        int userId = Integer.parseInt(request.getParameter("userId"));
 
         System.out.println("USER ID = " + userId);
 
